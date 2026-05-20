@@ -1,15 +1,17 @@
-# NEVER commit a real personal corpus. It is private writing (sent email, texts, etc).
-# The methodology and the skill are public. The corpus is not.
-corpus.md
-*-corpus.md
-*_corpus.md
-my-voice/
-VoicePack/
-voicepack-private/
+# Never commit a real personal corpus. It is private writing (sent email, texts, etc).
+# The skill names the raw source file corpus.md and writes bundles to ~/VoicePack/
+# (outside this repo) by default. The rules below are a safety net in case someone
+# points the output into this repo. If you assemble your corpus under a different
+# filename, add it here.
+#
+# Patterns are anchored with a leading slash so they only match this repo's root,
+# not directories like examples/voicepack/ (macOS filesystems are case-insensitive,
+# so an unanchored pattern would over-match).
 
-# Personal output bundles (yours, not the synthetic example in examples/)
+corpus.md
+/VoicePack/
 /output/
-/bundle/
+/my-voice/
 
 # OS / editor noise
 .DS_Store
@@ -17,6 +19,3 @@ Thumbs.db
 *.swp
 .idea/
 .vscode/
-
-# Allow the synthetic example corpus, which contains no real personal data
-!examples/sample-corpus.md

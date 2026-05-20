@@ -90,7 +90,7 @@ If you would rather not clone, paste the block in [`install-prompt.md`](install-
 
 ## Privacy
 
-Your corpus is your real, private correspondence. **Do not commit it, and do not publish it.** The `.gitignore` in this repo blocks the common corpus filenames by default. Share the profile and the method. Keep the source to yourself.
+Your corpus is your real, private correspondence. **Do not commit it, and do not publish it.** The `.gitignore` in this repo blocks `corpus.md` by default (add your own filename if you named it something else). Share the profile and the method. Keep the source to yourself.
 
 ## License
 
