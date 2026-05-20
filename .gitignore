@@ -1,0 +1,22 @@
+# NEVER commit a real personal corpus. It is private writing (sent email, texts, etc).
+# The methodology and the skill are public. The corpus is not.
+corpus.md
+*-corpus.md
+*_corpus.md
+my-voice/
+VoicePack/
+voicepack-private/
+
+# Personal output bundles (yours, not the synthetic example in examples/)
+/output/
+/bundle/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Allow the synthetic example corpus, which contains no real personal data
+!examples/sample-corpus.md
