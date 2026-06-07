@@ -1,3 +1,5 @@
+![Voice Profile Builder — build a voice profile from your pre-AI writing so AI drafts in your real voice, not generic AI prose](images/banner.png)
+
 # Voice Profile Builder
 
 Build a voice profile from your own writing so AI drafts in *your* voice, not in generic AI prose. The twist: it works best when you feed it writing you produced **before ChatGPT existed.**
