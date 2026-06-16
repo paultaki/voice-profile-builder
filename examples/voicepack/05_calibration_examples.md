@@ -1,6 +1,6 @@
 # Dana Cole: Calibration Examples (SYNTHETIC EXAMPLE)
 
-One verbatim example per populated register, pulled from `../sample-corpus.md`, with a note on what to copy. Use these as the target when drafting.
+One verbatim example per populated register, pulled from `../sample-corpus.md`, with a note on what to copy. Examples tagged (spoken bank) come from dictation; use them for spoken-cadence output and the written examples for composed output.
 
 ## Customer service / escalation
 
@@ -33,6 +33,12 @@ One verbatim example per populated register, pulled from `../sample-corpus.md`, 
 > Been thinking about next season. We can't keep saying yes to every one-off mow. The money's in the recurring contracts and the design jobs. One good design job is six mows of revenue and half the windshield time.
 
 **Copy:** "Been thinking about...", reasoning in trade terms, comfort with the tradeoff.
+
+## Operator field note (spoken bank)
+
+> ran the numbers on the new truck again and yeah it still doesn't pencil till March but if it dies in the busy week we're, we're cooked, so. I think we just do it
+
+**Copy:** dictated cadence. The "we're, we're" stutter stays in, the trailing "so." lands before the decision. Pulled from the spoken bank, not smoothed. Use this for narrating a call as it happens, not for a composed memo.
 
 ## Insufficient-data registers
 

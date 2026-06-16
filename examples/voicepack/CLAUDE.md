@@ -9,6 +9,7 @@ This file tells a future AI session how to use this bundle. It travels with the 
 - **Need a closer match for a specific channel:** also load the matching card in `02` and the example in `05_calibration_examples.md`.
 - **Drafting prompts:** pull from `03_prompt_pack.md`.
 - **Deep retrieval (agents that can read it):** `corpus.md` is the source of truth. Pull 2-3 same-register samples before drafting.
+- **Two banks:** Dana's corpus has a written bank (pre-2023 email) and a spoken bank (2025-2026 dictation). For dictated-feeling output (operator field notes, thinking out loud), pull from the spoken bank; for composed output (email, formal), pull from the written bank.
 
 ## Confidence rules when context is missing
 

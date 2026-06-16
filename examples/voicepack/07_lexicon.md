@@ -56,3 +56,11 @@ Verbatim phrase bank. Every entry exists in `sample-corpus.md`. Nothing here is 
 - "One good design job is six mows of revenue and half the windshield time."
 - "either outcome is fine by me"
 - "I'd rather lose the money than lose you as a customer"
+
+## Spoken bank (dictation, verbatim)
+
+Disfluency carried as-is. These are the cadence fingerprints, not errors to clean.
+
+- "the callbacks are killing us, the callbacks are the thing" (repetition kept)
+- "we're, we're cooked, so." (stutter, then trailing "so")
+- "why did it take me ten years to see that"

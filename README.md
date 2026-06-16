@@ -1,4 +1,4 @@
-![Voice Profile Builder — build a voice profile from your pre-AI writing so AI drafts in your real voice, not generic AI prose](images/banner.png)
+![Voice Profile Builder: build a voice profile from your pre-AI writing so AI drafts in your real voice, not generic AI prose](images/banner.png)
 
 # Voice Profile Builder
 

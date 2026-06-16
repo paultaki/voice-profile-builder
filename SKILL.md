@@ -43,7 +43,7 @@ Spoken path (often the cleanest source, and the fastest way to volume): pull the
 
 ### Stage 1: intake and contamination scan
 
-1. Read the corpus. Report total words, approximate date range, and rough coverage by writing type.
+1. Read the corpus. Report total words (the person's own words, excluding date stamps, source annotations, or headers), approximate date range, the written-vs-spoken split, and rough coverage by writing type.
 2. Scan for AI contamination. Flag every match for user review, never auto-delete:
    - Bracket placeholders like `[Name]`, `[Your name]`, `[CEO's name]`, `[Company]`
    - Em-dashes
@@ -105,13 +105,13 @@ Produce these files in the target directory. Use the user's first name where ind
 
 ### Stage 5: verify
 
-Generate one 150-200 word test draft in each populated register. Score each against the evaluation checklist. Surface any category below 1. Iterate the relevant files. Show the final bundle and the test drafts to the user. Tell them to read the test drafts aloud before shipping anything public.
+Generate one 150-200 word test draft in each populated register; keep these inline in your message to the user, they are not bundle files. Score each against the evaluation checklist. Surface any category below 1. Iterate the relevant files. Show the final bundle and the test drafts to the user. Tell them to read the test drafts aloud before shipping anything public.
 
 ### Stage 6: source-fidelity audit
 
 This operationalizes the "never invent a quote" rule. Under pressure the drafting model will smooth a quote or reach for a plausible line that is not actually in the corpus. Catch it mechanically.
 
-For every verbatim quote in `07_lexicon.md` and `05_calibration_examples.md` (and any quoted phrase in `02_register_cards.md` and `06_style_guide.md`):
+Audit only material claimed to be the person's own words. Skip the deliberately-absent items: banned-word and "what they never do" lists (their absence from the corpus is the point) and bracketed instruction templates like `Hey [Name],`. Grepping those produces expected misses, not failures. For every remaining verbatim quote in `07_lexicon.md` and `05_calibration_examples.md` (and any quoted phrase in `02_register_cards.md` and `06_style_guide.md`):
 
 1. Take a distinctive 5-10 word substring and grep it against `corpus.md`.
 2. Classify the result:
@@ -127,7 +127,7 @@ Report the counts: quotes checked, smoothed (restored), not-found (dropped).
 1. Never invent a quote. Every phrase in the lexicon, calibration examples, or style guide must exist verbatim in the corpus. Grep before writing, and run the Stage 6 audit to catch anything smoothed or invented.
 2. Never paraphrase the user's voice into the rules. The rules describe patterns the corpus exhibits, not patterns the model assumes are good.
 3. Surface contamination, do not delete it. The user approves every cut.
-4. No em-dashes in any output file unless the corpus consistently uses them.
+4. No em-dashes in any output file unless the corpus consistently uses them. This covers your own scaffolding prose, headers, and scorecard lines, not just the quoted voice samples. Sweep every bundle file and replace any em-dash with a comma, colon, period, or parentheses before finishing.
 5. If a register has fewer than 5 samples, mark it "insufficient data, draft with caution" and tell future sessions not to use it confidently.
 6. Output goes to the user-named directory, default `~/VoicePack/`. Never write into a vault, project, or work directory by default.
 7. Never publish the corpus. It is the user's private writing. The bundle is shareable, the corpus is not.
@@ -150,3 +150,4 @@ Report the counts: quotes checked, smoothed (restored), not-found (dropped).
 - Test drafts in every populated register generated and scored 15 or higher on `04_evaluation_checklist.md` (18-20 ships as-is, 15-17 after one light pass)
 - Stage 6 source-fidelity audit run: every lexicon and calibration quote traces to the corpus, smoothed quotes restored, untraceable quotes dropped
 - User has confirmed at least one test draft reads like them
+- If the corpus is too thin for any register to reach 5 samples, the run still completes: deliver the bundle with every register flagged "insufficient data" and tell the user to add volume (a week of dictation is the fastest path) before relying on it

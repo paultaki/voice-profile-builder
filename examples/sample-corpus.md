@@ -1,10 +1,10 @@
 # Dana Cole: Writing Corpus (SYNTHETIC EXAMPLE)
 
 **Source:** Fictional. Created to demonstrate the voice-profile-builder. No real person.
-**Cutoff:** N/A (synthetic). A real corpus would be pre-January 2023.
-**Word count:** ~600 (a real corpus is 20,000+).
+**Banks:** a pre-2023 written email bank (clean by date), plus a 2025-2026 voice-dictation bank (clean at any date, because speech cannot be AI-edited in the moment; see [`docs/SPOKEN-SOURCES.md`](../docs/SPOKEN-SOURCES.md)). A real corpus keeps these two banks labeled, not blended.
+**Word count:** ~750 (a real corpus is 20,000+).
 
-A real corpus is one long unstructured file. It is shown here pre-sorted by register only so readers can see the range. The builder does the sorting.
+A real corpus is one long unstructured file. It is shown here pre-sorted by register and bank only so readers can see the range. The builder does the sorting.
 
 ---
 
@@ -44,3 +44,15 @@ A real corpus is one long unstructured file. It is shown here pre-sorted by regi
 > Been thinking about next season. We can't keep saying yes to every one-off mow. The money's in the recurring contracts and the design jobs. One good design job is six mows of revenue and half the windshield time. So here's my thinking: we raise the one-off rate enough that it either pays for the hassle or pushes people toward a contract. Either outcome is fine by me.
 
 > The truck situation is going to bite us in March if we don't deal with it now. I'd rather spend the money in the slow month than be down a vehicle the week everybody calls.
+
+---
+
+## Modern spoken (dictation, 2025-2026)
+
+Voice memos, transcribed raw. Clean despite the recent dates: speech is not AI-edited in the moment. Carried verbatim, disfluency intact, not smoothed.
+
+> okay note to self, the Hendricks job, we cannot keep, like, the irrigation guy keeps no-showing and I'm done covering for him, I think I just bring it in house next season even if it costs me up front because the callbacks are killing us, the callbacks are the thing
+
+> ran the numbers on the new truck again and yeah it still doesn't pencil till March but if it dies in the busy week we're, we're cooked, so. I think we just do it
+
+> honestly the design jobs are the whole game now, like, one patio is six mows and I'm not sitting in traffic for it, why did it take me ten years to see that
