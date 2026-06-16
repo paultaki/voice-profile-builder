@@ -29,11 +29,18 @@ The cutoff is necessary, not sufficient. The corpus also needs:
 - **Volume.** 20,000 words is a floor. 80,000+ is the sweet spot. Patterns need repetition to be trustworthy.
 - **Rawness.** Do not clean it up before feeding it in. The typos and the run-ons are the fingerprint.
 
+## The exception: speech is clean at any date
+
+The cutoff is a proxy for the real rule, and the real rule is about the contamination *vector*: AI editing. There is one source the vector cannot reach. You cannot AI-smooth your own talking in the moment, so spoken material (dictation, voice memos, podcast and interview transcripts) is uncontaminated regardless of when it was recorded. A transcript from last week is as clean as an email from 2019.
+
+For many people this is the better path. Almost no one has 80,000 words of pre-2023 email, but anyone can dictate their way to that volume in a couple of weeks. The full guidance, including the one discipline that keeps a spoken corpus from getting ruined (do not let the AI tidy it), is in [SPOKEN-SOURCES.md](SPOKEN-SOURCES.md).
+
 ## If you do not have pre-2023 writing
 
 You can still build a useful profile from later writing, but be deliberate:
 
-- Prefer writing you know you did not run through an AI (handwritten-then-typed notes, quick texts, private journals).
+- Best option: use speech (dictation, voice memos, transcripts), which is clean at any date regardless of the cutoff (see above).
+- Otherwise prefer writing you know you did not run through an AI (handwritten-then-typed notes, quick texts, private journals).
 - Run the contamination scan aggressively and cut hard.
 - Accept that the profile will be a little closer to the model's center than a pre-AI one would be.
 

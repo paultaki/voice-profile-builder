@@ -23,7 +23,7 @@ A nine-file bundle the builder writes to a directory you choose:
 | `05_calibration_examples.md` | One verbatim example per register, pulled from your corpus |
 | `06_style_guide.md` | The operational distillation: five non-negotiables, what you never do |
 | `07_lexicon.md` | A verbatim phrase bank: your greetings, closers, typos, punctuation |
-| `corpus.md` | Your cleaned source, sorted by register (private, never published) |
+| `corpus.md` | Your cleaned source, sorted by register; written and spoken banks kept separate (private, never published) |
 | `CLAUDE.md` | Loader instructions so future AI sessions know which files to read |
 
 See [`examples/`](examples/) for a complete synthetic bundle built from a fictional person, so you can see the shape of the output without anyone's private writing.
@@ -51,7 +51,11 @@ The trick is the search strategy. Don't just grab your most recent or your "best
 
 Width matters more than polish. The more kinds of email you include, the more registers the profile can cover. A corpus that is 90% work email will only write work email well.
 
-> Why pre-2023? See [`docs/WHY-PRE-AI-CORPUS.md`](docs/WHY-PRE-AI-CORPUS.md).
+### Or skip email entirely: use your voice
+
+Written email is not the only clean source. Your *speech* is clean at any date. You can't run your own talking through ChatGPT in the moment. Dictation you already do (Wispr Flow, your phone's voice typing), transcribed voice memos, or transcripts of your podcasts, talks, and interviews all count, no pre-2023 cutoff required. For most people it is the fastest way to hit the word count: talk through your work for a week with dictation on and you have tens of thousands of words of pure, recent voice. One rule: do not let the AI tidy the transcript. The run-ons and the "ums" are the point.
+
+> Why pre-2023 for writing, and why speech is exempt? See [`docs/WHY-PRE-AI-CORPUS.md`](docs/WHY-PRE-AI-CORPUS.md) and [`docs/SPOKEN-SOURCES.md`](docs/SPOKEN-SOURCES.md).
 
 ## Run it (Claude Code)
 
@@ -82,6 +86,7 @@ If you would rather not clone, paste the block in [`install-prompt.md`](install-
 3. **Pattern extraction.** Pulls verbatim greetings, closers, sentence rhythm, signature typos, and the words you *never* use. Absence is signal.
 4. **Bundle.** Writes the nine files above.
 5. **Verify.** Generates a test draft in each register, scores it, and tells you to read it aloud before trusting it.
+6. **Source-fidelity audit.** Greps every quote in the bundle back to your corpus and drops or restores anything that was smoothed or invented. The "never invent a quote" rule, enforced.
 
 ## Hard rules the builder follows
 
